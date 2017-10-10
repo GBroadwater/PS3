@@ -39,4 +39,8 @@ public class DeckTest {
 		assertEquals(13, d.DeckSuitCount(eSuit.DIAMONDS));
 	}
 
+	@Test
+	public void TestFindCard() {
+		assertEquals(true, d.findCard(new Card(eSuit.HEARTS, eRank.JACK)));
+	}
 }

@@ -68,7 +68,7 @@ public class Deck {
 
 	public boolean findCard(Card card) {
 		for (Card c : this.cardsInDeck) {
-			if (c == card)
+			if (c.geteRank() == card.geteRank() && c.geteSuit() == card.geteSuit())
 				return true;
 		}
 		return false;
