@@ -43,4 +43,10 @@ public class DeckTest {
 	public void TestFindCard() {
 		assertEquals(true, d.findCard(new Card(eSuit.HEARTS, eRank.JACK)));
 	}
+	@Test
+	public void TestCardRemove() {
+		System.out.println(d.DeckRankCount(eRank.FIVE));
+		assertFalse(d.findCard(d.Draw(eRank.FIVE)));
+		System.out.println(d.DeckRankCount(eRank.FIVE));	
+	}
 }
